@@ -14,7 +14,7 @@ WatchKit 提供了下列方法把图片合并到内容：
 - 使用图像资产来管理图像。图像资产允许为各设备尺寸指定不同图像版本。
 
 ## 使用命名图像以提高性能　
-　　　
+
 下列方法可以改变接口对象的当前图像：
 
 - 使用 [setImageNamed:](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceImage_class/index.html#//apple_ref/occ/instm/WKInterfaceImage/setImageNamed:) 或者 [setBackgroundImageNamed:](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceGroup_class/index.html#//apple_ref/occ/instm/WKInterfaceGroup/setBackgroundImageNamed:) 方法来配置存于 WatchKit 应用程序包或设备缓存中的图像。  
@@ -36,14 +36,4 @@ WatchKit 提供了下列方法把图片合并到内容：
 **重要**   
 当缓存动画图片时，使用 [animatedImageWithImages:duration:](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIImage_Class/index.html#//apple_ref/occ/clm/UIImage/animatedImageWithImages:duration:) 方法用所有的动画帧和缓存图片来创建一个单独的 `UIImage` 对象来。不要用单独地个性的帧来缓存图片。
 
-Apple Watch 图像缓存尺寸受限，每个应用程序拥有大约 5 MB 的缓存空间。当应用程序占用缓存后，添加新图像之前就必须从缓存中移除现有图像。使用[removeCachedImageWithName:](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceDevice_class/index.html#//apple_ref/occ/instm/WKInterfaceDevice/removeCachedImageWithName:) 方法来删除单个图像或使用 [removeAllCachedImages](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceDevice_class/index.html#//apple_ref/occ/instm/WKInterfaceDevice/removeAllCachedImages) 方法来彻底清除缓存。
-
-
-
-
-
-
-
-
-
-　
+Apple Watch 图像缓存尺寸受限，每个应用程序拥有大约 5 MB 的缓存空间。当应用程序占用缓存后，添加新图像之前就必须从缓存中移除现有图像。使用 [removeCachedImageWithName:](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceDevice_class/index.html#//apple_ref/occ/instm/WKInterfaceDevice/removeCachedImageWithName:) 方法来删除单个图像或使用 [removeAllCachedImages](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceDevice_class/index.html#//apple_ref/occ/instm/WKInterfaceDevice/removeAllCachedImages) 方法来彻底清除缓存。
