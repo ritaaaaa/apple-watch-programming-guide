@@ -1,21 +1,13 @@
-# App 概要
-Storyboard 支持创建 WatchKit App 的界面。当你把 WatchKit App 添加到你的工程后，Xcode会自动生成一个 Storyboard 来让你实现相关UI。这个 Storyboard 至少会有一App个 Scene（场景，一般来说 Storyboard 里面的一个视图控制器就可以看作一个 Scene）是给你的 WatchKit App，也可能还会有预览或通知相关的 Scene。你也可以通过从空间库里面拖拽视图控制器的方式来增加其它 Scene。
+# UI 概要
 
-在这个 Storyboard 里面每个新建的 Scene 都应该是基于 [WKInterfaceController](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/cl/WKInterfaceController)（对于动态通知界面，则应该继承[WKUserNotificationInterfaceController](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKUserNotificationInterfaceController_class/index.html#//apple_ref/occ/cl/WKUserNotificationInterfaceController)）。对于每个新建的 Scene，记得在id属性框内填上对应的视图控制器的名字。所有和视图控制相关的代码都应该放在对应的 WatchKit 扩展里面。不要在 WatchKit App 里面包含任何代码。
-
-## 视图控制器是如何工作的
-视图控制器管理 Scene 里面的内容。视图控制器用 outlet 存储 Scene 里面相应对象的引用，并且通过定义 action 方法来响应用户操作。在 App运行时，通过视图控制器中的 [init](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/instm/WKInterfaceController/init)，[awakeWithContext:](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/instm/WKInterfaceController/awakeWithContext:) 和 [willActivate](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/instm/WKInterfaceController/willActivate) 方法来配置界面。在这些方法里，你可以做一些操作，比如：
-
-* 获取需要显示的数据。
-* 设置标签、图片或者其它控件的初始值。
-* 隐藏那些你不需要一次性同时显示的内容。
-
-WatchKit APP 并不限制有多少视图控制器，但是视图控制器越多也就意味着越复杂，因此少点更好。你选择的导航方式决定了用户是如何从一个界面跳转到下个界面的。有些导航方式需要你明确指明下个视图控制器是哪个，有些则不需要。需要更多关于界面直间导航的内容请参考[这里](./interface-navigation.md)。
+开始实现 App 的第一步是定义 Storyboard 中的 Scene。每个 Scene 定义了整个 App 用户界面的一部分。你可以为不同大小的 Apple Watch 定义不同的 Scene，也可以为同一个界面配置不同的展示效果。
 
 ## 布局 Scenes
-WatchKit App 使用的布局模型不同于 iOS App。在 Scene 里面装配 WatchKit App 界面的时候，并没有因为控件的添加而创建多层次的视图层。而是 Xcode 会决定你所添加到 Scene 的控件元素所在的位置，把他们垂直堆叠在不同的行。在运行时，Apple Watch 会取出相应的控件把它们布局在合适的区域并显示出来。
+WatchKit App 使用的布局模型不同于 iOS App。在 Scene 里面装配 WatchKit App 界面的时候，并没有因为控件的添加而创建多层次的视图层。而是 Xcode 会决定你所添加到 Scene 的控件元素所在的位置，把他们竖直堆叠在不同的行。运行时，Apple Watch 会取出相应的控件把它们布局在合适的区域（横向上）并显示出来。
 
-Watchkit 也提供了让你在 Scene 里面精确放置控件元素的方式。大多数控件的大小和位置可以通过属性面板来设置。另外一种控制控件元素位置的方式是组合对象。组合对象可以让你在水平方向和在竖直方向上一样布局控件。组合对象还可以实现在组合范围内保持控件之间间距。组合对象没有默认的视觉效果，但如果需要的话你也可以配置背景色或是背景图片。
+尽管 Xcode 几乎处理了所有的界面布局工作，Watchkit 也提供了一些让你在 Scene 里面精确控制控件元素的方式。大多数控件的大小和位置可以通过属性面板来设置。控件的位置可以通过设置控件的水平、竖直方向上的对齐属性来设置。
+
+另外一种控制控件元素位置的方式是组合对象。组合对象可以让你在水平方向和在竖直方向上一样布局控件。组合对象还可以实现在组合范围内保持控件之间间距。组合对象没有默认的视觉效果，但如果需要的话你也可以配置背景色或是背景图片。
 
 图 5-1 展示了如何在 Storyboard 里面放置不同的控件。前三个控件是标签，每个标签都占满了其所在行的横向区域。对于每个标签，它们的对齐属性决定相对于视图控制器的边界左对齐、右对齐还是居中。标签的下面是由水平方向上排练的两张图片组成的组合对象。在组合对象的下面还有竖直放置的一条分割线和一个按钮。
 
@@ -50,6 +42,29 @@ Xcode 支持为不同大小的 Apple Watch 定义不同的界面。在 Storyboar
 不能添加新的控件或是改变已有控件的顺序。尽管你不能移除控件，但是你可以隐藏他们，这样会临时将控件从布局中移除。当所有的控件都隐藏时，其它对象会充满原先这些控件所在的地方。如果要隐藏某个控件而不让其它对象充满该控件所在的位置，你可以把该控件的 alpha 值设置为0。更多关于隐藏控件的内容请参考[这里](./interface-objects.md)。
 
 ## 设置 App 的主色
+
+每个 WatchKit App 会有一个相关的主色，这个颜色会在以下 UI 控件上体现出来：
+
+* 状态栏上的标题。
+* 通知界面上的 App 名称。
+
+主色存储在 App Storeyboard 里面的一个全局颜色变量里面。要访问这个变量，选中 Storeyboard，并且选择文件面板。从弹出菜单上选择一个预定义好的颜色，或者用颜色选择器选择一种自定义的颜色。
+
+## 界面国际化
+
+和 WatchKit App 关联的 Storyboard 默认就有基本的国际化。会将 Storeyboard 种所有的字符串自动添加到工程的 ```Localizable.string``` 文件中。你只需在该文件中将字符串翻译成需要的语言，然后就可以在 App 中使用了。当运行时创建了一个 Scene，Xcode 会将字符串关联上相应的本地化语言。
+
+合理布局界面，以便标签等控件有合适的控件来显示它们的文字。不要把按钮都放在同一行，而是应该把它们竖直放置，以便都有合适的空间显示按钮标题。
+
+至于那些你编码中用到的文本和图片，用类似 iOS 和 OS X App 上国际化的方式：
+
+* 用 ```NSLocalizedString``` 宏从资源文件中加载字符串。
+* 用 ```NSNumberFormatter``` 对象格式化数值。
+* 用 ```NSDateFormatter``` 格式化日期
+
+在 WatchKit 扩展里面，```NSLocale``` 对象返回配置在 Apple Watch 里面的本地化信息。用这个类获取当前用户的首选语言及其它语言还有其它本地化相关信息。
+
+更多关于 App 国际化的内容请参考[这里](https://developer.apple.com/library/prerelease/ios/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i)。
 
 
 
