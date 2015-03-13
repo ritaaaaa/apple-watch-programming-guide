@@ -8,10 +8,10 @@
  - 待添加章节的中文翻译 - [Interface Navigation](watchkit-apps/interface-navigation.md)（[vectxi](https://github.com/vectxi) 已认领）
  - 待添加章节的中文翻译 - [Interface Objects](watchkit-apps/interface-objects.md)（[poppinlp](https://github.com/poppinlp) 已认领）
  - 待添加章节的中文翻译 - [Text and Labels](watchkit-apps/text-and-labels.md)（[7heaven](https://github.com/7heaven) 已认领）
- - 待添加章节的中文翻译 - [Images](watchkit-apps/images.md)（[wanningliu](https://github.com/wanningliu) 已认领）
+ - [图片 - Images](watchkit-apps/images.md)（[wanningliu](https://github.com/wanningliu) done）
  - 待添加章节的中文翻译 - [Tables](watchkit-apps/tables.md)（[7heaven](https://github.com/7heaven) 已认领）
  - 待添加章节的中文翻译 - [Context Menus](watchkit-apps/context-menus.md)（[poppinlp](https://github.com/poppinlp) 已认领）
- - 待添加章节的中文翻译 - [Settings](watchkit-apps/settings.md)（[wanningliu](https://github.com/wanningliu) 已认领）
+ - [设置 - Settings](watchkit-apps/settings.md)（[wanningliu](https://github.com/wanningliu) done）
 - 预览 - Glances
  - [预览概要 - Glance Essentials](glances/glance-essentials.md)（[staker](https://github.com/staker) done）
  - [管理你的预览界面 - Managing Your Glance Interface](glances/managing-your-glance-interface.md)（[staker](https://github.com/staker) done）
