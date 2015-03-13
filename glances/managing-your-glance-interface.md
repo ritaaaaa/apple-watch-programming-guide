@@ -31,4 +31,14 @@
 
 使用一个 [NSTimer](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Reference/Foundation/Classes/NSTimer_Class/index.html#//apple_ref/occ/cl/NSTimer) 对象周期地变化更新它在屏幕上预览的内容。你无需更新 [WKInterfaceDate](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceDate_class/index.html#//apple_ref/occ/cl/WKInterfaceDate) 和 [WKInterfaceTimer](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceTimer_class/index.html#//apple_ref/occ/cl/WKInterfaceTimer) 对象，因为它们是自动更新的。 
 
-## 在你的预览中定制 App
+## 定制点击预览之后的启动方式
+
+当用户触摸预览，苹果手表会启动相应的手机插件应用。通常，启动的应用之后会展示它的主界面控制器。如果需要定制点击预览之后的启动方式，按照如下步骤：
+
+- 在预览界面控制器里：
+ - 配置预览界的通用方法 [init](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/instm/WKInterfaceController/init) 和 [willActivate](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/instm/WKInterfaceController/willActivate)。   
+ - 调用 [updateUserActivity:userInfo:webpageURL:](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/instm/WKInterfaceController/updateUserActivity:userInfo:webpageURL:) 方法，并用 userInfo 属性去传递预览的状态信息给你的应用。在启动的时候，你的应用可以用上下文信息来展示不同的界面控制器。
+- 在你的主要界面控制器里： 
+ - 实现 `handleUserActivity` 方法，用提供的 userInfo 字典去适当配置你的 UI。  
+ 
+在启动的时候，调用 `updateUserActivity:userInfo:webpageURL:` 方法告诉手表插件调用主界面控制器的 [handleUserActivity:](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKInterfaceController_class/index.html#//apple_ref/occ/instm/WKInterfaceController/handleUserActivity:) 方法。用系统提供的的上下文数据适当地配置你的 UI。例如，一个基于页面的界面应用，可以用这些提供的数据信息去选择初始化时展示哪一页。
