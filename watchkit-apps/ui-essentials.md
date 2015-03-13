@@ -11,7 +11,8 @@ WatchKit App 使用的布局模型不同于 iOS App。在 Scene 里面装配 Wat
 
 图 5-1 展示了如何在 Storyboard 里面放置不同的控件。前三个控件是标签，每个标签都占满了其所在行的横向区域。对于每个标签，它们的对齐属性决定相对于视图控制器的边界左对齐、右对齐还是居中。标签的下面是由水平方向上排练的两张图片组成的组合对象。在组合对象的下面还有竖直放置的一条分割线和一个按钮。
 
-**图 5-1** Xcode 里的界面对象
+**图 5-1** *Xcode 里的界面对象*
+
 ![](../images/storyboard_layout_2x.png)
 
 在 Xcode 中创建界面的时候，尽可能让控件自适应大小。App 的界面需要被展示在所有尺寸的 Apple Watch 上。让系统去适配界面，尽量减少为不同设备而写的适配代码。
@@ -22,7 +23,8 @@ Xcode 支持为不同大小的 Apple Watch 定义不同的界面。在 Storyboar
 
 为不同大小的设备自定义控件需要用到属性面板上的加号按钮来改变默认的设备信息。点击加号按钮为相应的属性增加对应的设备。改变这个值只会影响当前选中的设备。图 5-2 说明了如何为 42mm 的 Apple Watch 设置特殊的字体大小。
 
-**图 5-2** 为不同的设备自定义控件属性
+**图 5-2** *为不同的设备自定义控件属性*
+
 ![](../images/scalable_text_2x.png)
 
 不应该让用户发现你的 App 在不同大小的 Apple Watch 上有不同的界面，因此建议尽可能不要为不同的设备定义不同的界面。尽量限制因间距、边距等改变视图布局的做法。不推荐因为不同的布局而移除当前界面上所有控件的做法。你应该尽可能为所有的 Apple Watch 使用相似的界面。
@@ -39,7 +41,7 @@ Xcode 支持为不同大小的 Apple Watch 定义不同的界面。在 Storyboar
 * 改变控件的透明度。
 * 显示、隐藏控件。
 
-不能添加新的控件或是改变已有控件的顺序。尽管你不能移除控件，但是你可以隐藏他们，这样会临时将控件从布局中移除。当所有的控件都隐藏时，其它对象会充满原先这些控件所在的地方。如果要隐藏某个控件而不让其它对象充满该控件所在的位置，你可以把该控件的 alpha 值设置为0。更多关于隐藏控件的内容请参考[这里](./interface-objects.md)。
+不能添加新的控件或是改变已有控件的顺序。尽管你不能移除控件，但是你可以隐藏他们，这样会临时将控件从布局中移除。当所有的控件都隐藏时，其它对象会充满原先这些控件所在的地方。如果要隐藏某个控件而不让其它对象充满该控件所在的位置，你可以把该控件的 alpha 值设置为0。更多关于隐藏控件的内容请参考[Hiding Interface Objects](./interface-objects.md)。
 
 ## 设置 App 的主色
 
@@ -64,7 +66,7 @@ Xcode 支持为不同大小的 Apple Watch 定义不同的界面。在 Storyboar
 
 在 WatchKit 扩展里面，```NSLocale``` 对象返回配置在 Apple Watch 里面的本地化信息。用这个类获取当前用户的首选语言及其它语言还有其它本地化相关信息。
 
-更多关于 App 国际化的内容请参考[这里](https://developer.apple.com/library/prerelease/ios/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i)。
+更多关于 App 国际化的内容请参考[Internationalization and Localization Guide](https://developer.apple.com/library/prerelease/ios/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i)。
 
 
 
