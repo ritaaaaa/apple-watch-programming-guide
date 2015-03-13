@@ -6,15 +6,15 @@
 - WatchKit Apps
  - 待添加章节的中文翻译 - [App Essentials](watchkit-apps/app-essentials.md)（[vectxi](https://github.com/vectxi) 已认领）
  - 待添加章节的中文翻译 - [Interface Navigation](watchkit-apps/interface-navigation.md)（[vectxi](https://github.com/vectxi) 已认领）
- - 待添加章节的中文翻译 - [Interface Objects](watchkit-apps/interface-objects.md)
- - 待添加章节的中文翻译 - [Text and Labels](watchkit-apps/text-and-labels.md)
- - 待添加章节的中文翻译 - [Images](watchkit-apps/images.md)
- - 待添加章节的中文翻译 - [Tables](watchkit-apps/tables.md)
- - 待添加章节的中文翻译 - [Context Menus](watchkit-apps/context-menus.md)
- - 待添加章节的中文翻译 - [Settings](watchkit-apps/settings.md)
-- Glances
- - 待添加章节的中文翻译 - [Glance Essentials](glances/glance-essentials.md)（[staker](https://github.com/staker) 已认领）
- - 待添加章节的中文翻译 - [Managing Your Glance Interface](glances/managing-your-glance-interface.md)（[staker](https://github.com/staker) 已认领）
+ - 待添加章节的中文翻译 - [Interface Objects](watchkit-apps/interface-objects.md)（[poppinlp](https://github.com/poppinlp) 已认领）
+ - 待添加章节的中文翻译 - [Text and Labels](watchkit-apps/text-and-labels.md)（[7heaven](https://github.com/7heaven) 已认领）
+ - 待添加章节的中文翻译 - [Images](watchkit-apps/images.md)（[wanningliu](https://github.com/wanningliu) 已认领）
+ - 待添加章节的中文翻译 - [Tables](watchkit-apps/tables.md)（[7heaven](https://github.com/7heaven) 已认领）
+ - 待添加章节的中文翻译 - [Context Menus](watchkit-apps/context-menus.md)（[poppinlp](https://github.com/poppinlp) 已认领）
+ - 待添加章节的中文翻译 - [Settings](watchkit-apps/settings.md)（[wanningliu](https://github.com/wanningliu) 已认领）
+- 预览 - Glances
+ - [预览概要 - Glance Essentials](glances/glance-essentials.md)（[staker](https://github.com/staker) done）
+ - [管理你的预览界面 - Managing Your Glance Interface](glances/managing-your-glance-interface.md)（[staker](https://github.com/staker) done）
 - Notifications
- - 待添加章节的中文翻译 - [Notification Essentials](notifications/notification-essentials.md)（[riverfeng](https://github.com/riverfeng) 已认领）
+ - 通知要点 - [Notification Essentials](notifications/notification-essentials.md)（[riverfeng](https://github.com/riverfeng) 已认领）
  - 待添加章节的中文翻译 - [Managing a Custom Long Look Interface](notifications/managing-a-custom-long-look-interface.md)（[riverfeng](https://github.com/riverfeng) 已认领）
