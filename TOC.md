@@ -12,8 +12,8 @@
  - 待添加章节的中文翻译 - [Tables](watchkit-apps/tables.md)（[7heaven](https://github.com/7heaven) 已认领）
  - 待添加章节的中文翻译 - [Context Menus](watchkit-apps/context-menus.md)（[poppinlp](https://github.com/poppinlp) 已认领）
  - 待添加章节的中文翻译 - [Settings](watchkit-apps/settings.md)（[wanningliu](https://github.com/wanningliu) 已认领）
-- Glances
- - 待添加章节的中文翻译 - [Glance Essentials](glances/glance-essentials.md)（[staker](https://github.com/staker) 已认领）
+- 预览 - Glances
+ - [预览概要 - Glance Essentials](glances/glance-essentials.md)（[staker](https://github.com/staker) done）
  - [管理你的预览界面 - Managing Your Glance Interface](glances/managing-your-glance-interface.md)（[staker](https://github.com/staker) done）
 - Notifications
  - 通知要点 - [Notification Essentials](notifications/notification-essentials.md)（[riverfeng](https://github.com/riverfeng) 已认领）
