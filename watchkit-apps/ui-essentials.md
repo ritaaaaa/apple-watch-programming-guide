@@ -3,7 +3,7 @@
 开始实现 App 的第一步是定义 Storyboard 中的 Scene。每个 Scene 定义了整个 App 用户界面的一部分。你可以为不同大小的 Apple Watch 定义不同的 Scene，也可以为同一个界面配置不同的展示效果。
 
 ## 布局 Scenes
-WatchKit App 使用的布局模型不同于 iOS App。在 Scene 里面装配 WatchKit App 界面的时候，并没有因为控件的添加而创建多层次的视图层。而是 Xcode 会决定你所添加到 Scene 的控件元素所在的位置，把他们竖直堆叠在不同的行。运行时，Apple Watch 会取出相应的控件把它们布局在合适的区域（横向上）并显示出来。
+WatchKit App 使用的布局模型不同于 iOS App。在 Scene 里面布局 WatchKit App 界面的时候，并没有因为控件的添加而创建多层次的视图层。Xcode 会决定你所添加到 Scene 中的控件元素所在的位置，把他们竖直堆叠在不同的行。运行时，Apple Watch 会取出相应的控件把它们布局在合适的区域并显示出来。
 
 尽管 Xcode 几乎处理了所有的界面布局工作，Watchkit 也提供了一些让你在 Scene 里面精确控制控件元素的方式。大多数控件的大小和位置可以通过属性面板来设置。控件的位置可以通过设置控件的水平、竖直方向上的对齐属性来设置。
 
