@@ -1,4 +1,4 @@
-# 设置　　
+# 设置 - Setting　　
 
 参数和设置是变动较少的数值，可以用于配置应用程序的行为或外观。如果 WatchKit 应用程序使用参数进行配置，就可以在工程中添加一个 WatchKit 专用设置包来显示这些设置。此设置包置于 iOS 应用程序中，而设置本身会在用户手机上显示。
 
@@ -7,11 +7,11 @@ WatchKit 设置包与 iOS 设置工作包的工作流程相同。此设置包定
 如需获取设置包工作的详细信息，请参考 [Preferences and Settings Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Conceptual/UserDefaults/Introduction/Introduction.html#//apple_ref/doc/uid/10000059i)。
 
 ## 创建 WatchKit 设置包　
-　　　
+
 请按照以下操作向 Xcode 项目添加 WatchKit 设置包：
-　　　　
-1. 选择 File > New > File。　　
-2. 在 Apple Watch 选项中选择 WatchKit 设置包并单击 Next。
+
+1. 选择 File > New > File。
+2. 在 Apple Watch 选项中选择 WatchKit 设置包并单击 Next。  
 3. 使用 `Settings-Watch.bundle` 名称来创建设置包，并添加到 iOS 应用程序中。命名 Settings-Watch.bundle 包是为了与 iOS 应用程序包进行区分。　
 　
 WatchKit 设置包的初始内容与 iOS 应用程序设置包相同，详见清单 12-1。

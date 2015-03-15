@@ -1,4 +1,4 @@
-# 界面导航
+# 界面导航 - Interface Navigation
 
 对于那些不只一屏内容的 WatchKit App 来说，你必须选择一种在界面之间导航的方式。WatchKit App 支持两种完全不一样的导航方式：
 
