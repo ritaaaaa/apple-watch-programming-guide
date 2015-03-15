@@ -62,7 +62,7 @@ category 字符串同样也能定义哪些活动按钮（如果有的话）被�
 
 **图 16-4** 一个单一通知类型的静态和动态场景    
 
-![一个单一通知类型的静态和动态场景](../iamges//notification_design_2x.png)  
+![一个单一通知类型的静态和动态场景](../images/notification_design_2x.png)  
 
 ## 配置动态通知界面   
 
@@ -147,6 +147,7 @@ NSString* invitationNotesKey = @"note";
     // Tell WatchKit to display the custom interface.
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
+```
 
 在调用完成处理代码块时，如果你希望 WatchKit 显示静态界面，那就指定 [WKUserNotificationInterfaceTypeDefault](https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WKUserNotificationInterfaceController_class/index.html#//apple_ref/c/econst/WKUserNotificationInterfaceTypeDefault) 常量。
 
