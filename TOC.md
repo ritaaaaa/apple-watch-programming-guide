@@ -16,5 +16,5 @@
  - [预览概要 - Glance Essentials](glances/glance-essentials.md)（[staker](https://github.com/staker) done）
  - [管理你的预览界面 - Managing Your Glance Interface](glances/managing-your-glance-interface.md)（[staker](https://github.com/staker) done）
 - Notifications
- - 通知要点 - [Notification Essentials](notifications/notification-essentials.md)（[riverfeng](https://github.com/riverfeng) 已认领）
- - 待添加章节的中文翻译 - [Managing a Custom Long Look Interface](notifications/managing-a-custom-long-look-interface.md)（[riverfeng](https://github.com/riverfeng) 已认领）
+ - [通知要点 - Notification Essentials](notifications/notification-essentials.md)（[riverfeng](https://github.com/riverfeng) done）
+ - [管理自定义 Long Look 界面 - Managing a Custom Long Look Interface](notifications/managing-a-custom-long-look-interface.md)（[riverfeng](https://github.com/riverfeng) done）
