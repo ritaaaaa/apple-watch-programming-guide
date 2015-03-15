@@ -1,5 +1,5 @@
 - Overview  
- - 待添加章节的中文翻译 - [Developing for Apple Watch](overview/developing-for-apple-watch.md)（[YouXianMing](https://github.com/YouXianMing) 已认领）
+ - [开发您的 Watch 应用 - Developing for Apple Watch](overview/developing-for-apple-watch.md)（[YouXianMing](https://github.com/YouXianMing) done）
  - [配置 Xcode 项目 - Configuring Your Xcode Project](overview/configuring-your-xcode-project.md)（[YouXianMing](https://github.com/YouXianMing) done）
  - [Watch 应用结构 - WatchKit App Architecture](overview/watchkit-app-architecture.md)（[YouXianMing](https://github.com/YouXianMing) done）
  - [使用 iOS 技术 - Leveraging iOS Technologies](overview/leveraging-ios-technologies.md)（[YouXianMing](https://github.com/YouXianMing) done）
