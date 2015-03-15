@@ -2,7 +2,7 @@
  - 待添加章节的中文翻译 - [Developing for Apple Watch](overview/developing-for-apple-watch.md)（[YouXianMing](https://github.com/YouXianMing) 已认领）
  - 待添加章节的中文翻译 - [Configuring Your Xcode Project](overview/configuring-your-xcode-project.md)（[YouXianMing](https://github.com/YouXianMing) 已认领）
  - 待添加章节的中文翻译 - [WatchKit App Architecture](overview/watchkit-app-architecture.md)（[YouXianMing](https://github.com/YouXianMing) 已认领）
- - 待添加章节的中文翻译 - [Leveraging iOS Technologies](overview/leveraging-ios-technologies.md)（[YouXianMing](https://github.com/YouXianMing) 已认领）
+ - [使用 iOS 技术 - Leveraging iOS Technologies](overview/leveraging-ios-technologies.md)（[YouXianMing](https://github.com/YouXianMing) done）
 - WatchKit Apps
  - 待添加章节的中文翻译 - [UI Essentials](watchkit-apps/ui-essentials.md)（[vectxi](https://github.com/vectxi) 已认领）
  - 待添加章节的中文翻译 - [Interface Navigation](watchkit-apps/interface-navigation.md)（[vectxi](https://github.com/vectxi) 已认领）
