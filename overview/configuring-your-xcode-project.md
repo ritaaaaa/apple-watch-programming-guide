@@ -1,4 +1,4 @@
-# 配置 Xcode 项目  
+# 配置 Xcode 项目 - Configuring Your Xcode Project  
 
 Xcode 会将 Watch 应用和 WatchKit 应用扩展一起打包，然后放进现有的 iOS 应用包中。Xcode 提供了一个搭建 Watch 应用的模板，其中包含了创建应用、glance，以及自定义通知界面所需的所有资源。你可以在项目中进行实时测试。
 

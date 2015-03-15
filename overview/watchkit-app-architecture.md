@@ -1,4 +1,4 @@
-# Watch 应用结构
+# Watch 应用结构 - WatchKit App Architecture
 
 Apple Watch 应用程序包含两个部分：Watch 应用和 WatchKit 应用扩展。Watch 应用驻留在用户的 Apple Watch 中，只含有故事板和资源文件，要注意它并不包含任何代码。而 WatchKit 应用扩展驻留在用户的 iPhone 上（在关联的 iOS 应用当中），含有相应的代码和管理 Watch 应用界面的资源文件。
 

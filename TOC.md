@@ -1,20 +1,20 @@
-- Overview  
+- 概述 - Overview  
  - [开发您的 Watch 应用 - Developing for Apple Watch](overview/developing-for-apple-watch.md)（[YouXianMing](https://github.com/YouXianMing) done）
  - [配置 Xcode 项目 - Configuring Your Xcode Project](overview/configuring-your-xcode-project.md)（[YouXianMing](https://github.com/YouXianMing) done）
  - [Watch 应用结构 - WatchKit App Architecture](overview/watchkit-app-architecture.md)（[YouXianMing](https://github.com/YouXianMing) done）
  - [使用 iOS 技术 - Leveraging iOS Technologies](overview/leveraging-ios-technologies.md)（[YouXianMing](https://github.com/YouXianMing) done）
 - WatchKit Apps
- - 待添加章节的中文翻译 - [UI Essentials](watchkit-apps/ui-essentials.md)（[vectxi](https://github.com/vectxi) 已认领）
- - 待添加章节的中文翻译 - [Interface Navigation](watchkit-apps/interface-navigation.md)（[vectxi](https://github.com/vectxi) 已认领）
+ - [UI 概要 - UI Essentials](watchkit-apps/ui-essentials.md)（[vectxi](https://github.com/vectxi) done）
+ - [界面导航 - Interface Navigation](watchkit-apps/interface-navigation.md)（[vectxi](https://github.com/vectxi) done）
  - 待添加章节的中文翻译 - [Interface Objects](watchkit-apps/interface-objects.md)（[poppinlp](https://github.com/poppinlp) 已认领）
- - 待添加章节的中文翻译 - [Text and Labels](watchkit-apps/text-and-labels.md)（[7heaven](https://github.com/7heaven) 已认领）
+ - [文本与标签 - Text and Labels](watchkit-apps/text-and-labels.md)（[7heaven](https://github.com/7heaven) done）
  - [图片 - Images](watchkit-apps/images.md)（[wanningliu](https://github.com/wanningliu) done）
- - 待添加章节的中文翻译 - [Tables](watchkit-apps/tables.md)（[7heaven](https://github.com/7heaven) 已认领）
+ - [Tables - Tables](watchkit-apps/tables.md)（[7heaven](https://github.com/7heaven) done）
  - 待添加章节的中文翻译 - [Context Menus](watchkit-apps/context-menus.md)（[poppinlp](https://github.com/poppinlp) 已认领）
  - [设置 - Settings](watchkit-apps/settings.md)（[wanningliu](https://github.com/wanningliu) done）
 - 预览 - Glances
  - [预览概要 - Glance Essentials](glances/glance-essentials.md)（[staker](https://github.com/staker) done）
  - [管理你的预览界面 - Managing Your Glance Interface](glances/managing-your-glance-interface.md)（[staker](https://github.com/staker) done）
-- Notifications
+- 通知 - Notifications
  - [通知要点 - Notification Essentials](notifications/notification-essentials.md)（[riverfeng](https://github.com/riverfeng) done）
  - [管理自定义 Long Look 界面 - Managing a Custom Long Look Interface](notifications/managing-a-custom-long-look-interface.md)（[riverfeng](https://github.com/riverfeng) done）

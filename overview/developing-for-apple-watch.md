@@ -1,4 +1,4 @@
-# 开发您的 Watch 应用
+# 开发您的 Watch 应用 - Developing for Apple Watch
 
 >
 **重要提示**  
